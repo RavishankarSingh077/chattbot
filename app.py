@@ -1,4 +1,3 @@
-
 import os
 import tempfile
 import streamlit as st
@@ -40,3 +39,8 @@ if uploaded_file:
     llm = OllamaLLM(model="tinyllama")
 
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
+
+    if query:
+        result = qa_chain.invoke({"query": query})
+        st.subheader("Answer:")
+        st.write(result["result"])
