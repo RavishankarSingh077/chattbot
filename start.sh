@@ -4,8 +4,9 @@ export HOME=/tmp
 export OLLAMA_MODELS=/tmp/.ollama
 
 ollama serve &
-sleep 5
-ollama pull phi
+sleep 10
+ollama pull tinyllama
+
 
 
 
