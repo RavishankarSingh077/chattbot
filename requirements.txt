@@ -23,6 +23,7 @@ python-nmap~=0.7.1
 langchain-huggingface
 langchain-ollama
 chromadb
+pypdf~=4.2.0
 
 
 
