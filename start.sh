@@ -5,7 +5,8 @@ export OLLAMA_MODELS=/tmp/.ollama
 
 ollama serve &
 sleep 5
-ollama pull tinyllama
+ollama pull phi
+
 
 
 # Run the app from src/
