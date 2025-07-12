@@ -37,7 +37,9 @@ if uploaded_file:
 
   
   
-    llm = OllamaLLM(model="phi")
+  
+    llm = OllamaLLM(model="tinyllama")
+
 
 
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
