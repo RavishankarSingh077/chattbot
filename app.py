@@ -38,7 +38,7 @@ if uploaded_file:
   
   
   
-    llm = OllamaLLM(model="tinyllama")
+    llm = OllamaLLM(model="phi")
 
 
 
