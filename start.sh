@@ -9,5 +9,7 @@ ollama pull tinyllama
 
 
 # Run the app from src/
-streamlit run src/app.py --server.port=7860 --server.address=0.0.0.0
+
+streamlit run app.py --server.port=7860 --server.address=0.0.0.0
+
 
