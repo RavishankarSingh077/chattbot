@@ -15,7 +15,7 @@ load_dotenv()
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
-st.title("PDF Paper QA (RAG + Phi + LangChain)")
+st.title("PDF Paper Upload and Q/A ")
 
 uploaded_file = st.file_uploader("Upload a PDF", type="pdf")
 query = st.text_input("Ask a question about the PDF")
