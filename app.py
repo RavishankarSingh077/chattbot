@@ -15,7 +15,7 @@ load_dotenv()
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
-st.title("📄 PDF Paper QA (RAG + Phi + LangChain)")
+st.title("PDF Paper QA (RAG + Phi + LangChain)")
 
 uploaded_file = st.file_uploader("Upload a PDF", type="pdf")
 query = st.text_input("Ask a question about the PDF")
@@ -36,7 +36,9 @@ if uploaded_file:
     retriever = vectorstore.as_retriever(search_kwargs={"k": 1})
 
   
-    llm = OllamaLLM(model="tinyllama")
+  
+    llm = OllamaLLM(model="phi")
+
 
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
 
